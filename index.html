@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="header">
+      <p>COMP 3512 Assign1   <span id="credits">    Credits</span></p>
+    </div>
+
+    <div class="middle" id="middle">
+      <div class="middle_first">
+        <p>List of Companies</p>
+        <div class="middle_first_filter">
+          <p>Filter:-</p>
+          <input id="inputfield" />
+        </div>
+        <div class="middle_first_buttons">
+           <button onclick="Go()">Go</button>
+           <button onclick="removetext()" style="margin-left: 10px;">Clear</button>
+        </div>
+        <div id="listofcompanies"></div>
+      </div>
+
+
+      <div class="middle_second">
+        <div class="middle_second_top">
+           <p>Company Informmaton</p>
+           <img id="middle_second_top_img">
+           <p id="middle_second_top_desc"></p>
+        </div>
+        <div class="middle_second_bottom">
+          <p>Map</p>
+          <div id="map"></div>
+       </div>
+      </div>
+      <div class="middle_third">
+        <div class="middle_third_top" id="middle_third_top">
+        <div class="middle_third_header">
+          <p>Stock Data</p>
+          <button onclick="viewChart()">View Charts</button>
+        </div>
+        <div class="middle_third_list">
+          <p>Data</p>
+          <p>Open</p>
+          <p>Close</p>
+          <p>Low</p>
+          <p>High</p>
+          <p>Volume</p>
+      </div>
+        <div id="stock_container">
+        </div>
+      </div>
+      <div class="middle_third_bottom" id="middle_third_bottom">
+        <div> 
+         <p>Avg</p>
+         <p>Min</p>
+         <p>Max</p>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="chart" id="chart">
+       <div class="chart_right">
+         <p style="font-size: 20px;font-weight: bold;padding-left: 20px;">Charts</p>
+         <div class="charts_above">
+              <div style="width: 30vw;height: 20vh;" >
+                <canvas id="myChart1" style="width: 30vw;height: 45vh;">text</canvas>
+              </div>
+              <div style="width: 30vw;height: 20vh;" >
+                <canvas id="myChart2" style="width: 30vw;height: 45vh;">text</canvas>
+              </div>
+         </div>
+         <div class="charts_below">
+              <div style="width: 60vw;height: 20vh;" >
+                <canvas id="myChart4" style="width: 60vw;height: 50vh;">text</canvas>
+            </div>
+         </div>
+       </div>
+       <div class="charts_left">
+           <div class="charts_left_above">
+             <p id="charts_left_above_header"></p>
+             <div style="display: flex;justify-content: space-around;padding: 10px;align-items: center;">
+               <p id="charts_left_above_desc"></p>
+               <button class="charts_left_above_descbutton" onclick="Speak()">Speak</button>
+             </div>
+             <div class="charts_left_above_closebtn">
+               <button onclick="Close()">Close</button>
+             </div> 
+           </div> 
+           <div class="charts_left_below" id="charts_left_below">
+             <p>Financials</p>
+                <div class="charts_left_below_div">
+                  <p>Years</p>
+                  <p>Assets</p>
+                  <p>Earnings</p>
+                  <p>Liabilities</p>
+                  <p>Revenue</p>
+                </div>  
+           </div>
+       </div>
+    </div>
+
+  </div>
+</body>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_GcD7mqxb21wmtvJzs_E1fgfm50P1CQA&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>    
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="./index.js"></script>
+<script src="./script.js"></script>
+</html>

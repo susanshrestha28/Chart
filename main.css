@@ -1,0 +1,242 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.body {
+    
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: lightgray;
+}
+.header > p {
+   font-size: 20px;
+   font-weight: bold;
+   padding-left: 20px;
+}
+.middle {
+ display: flex;
+ margin-top: 1vh;
+ height: 89vh;
+ justify-content: space-between;
+}
+.middle_first {
+ display: flex;
+ flex-direction: column;
+ align-items: center;   
+ width: 20vw;
+ background-color: lightgrey;
+}
+.middle_first > p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.middle_first_filter {
+    display: flex;
+    align-items: center;
+}
+.middle_first_filter > p{
+    margin-top: 10px;
+}
+.middle_first_filter > input {
+    margin-left: 5px;
+    height: 20px;
+}
+.middle_first_buttons {
+    display: flex;
+    align-items: center;
+}
+.middle_first_buttons > button {
+    height: 30px;
+    background-color: rgb(100, 100, 235);
+    border-radius: 5px;
+    outline: 0;
+    border: transparent;
+    color: white;
+}
+#listofcompanies {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow-y: scroll;
+}
+.middle_second {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 39vw;
+    height: 89vh;
+    margin: 0;    
+}
+.middle_second_top{
+    height: 46vh;
+    background-color: lightgrey;
+    padding: 30px
+}
+.middle_second_top > p{
+   font-size: 30px;
+   font-weight: bold;
+}
+#middle_second_top_desc {
+    text-align: center;
+    font-size: 18px;
+   font-weight: 400;
+}
+#middle_second_top_img {
+    width: 200px;
+    height:20px;
+}
+.middle_second_bottom{
+    margin-top: 1vh;
+    height: 44vh;
+    background-color: lightgrey;
+}
+#map {
+height: 30vh;
+z-index: 99;
+}
+.middle_second_bottom > p{
+    /* margin-top: -10px; */
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+ }
+.middle_third {
+    width: 39vw;
+}
+.middle_third_top {
+    height: 70vh;
+    background-color: lightgrey;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.middle_third_header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.middle_third_header > p {
+    font-size: 30px;
+    font-weight: bold;
+}
+.middle_third_header > button {
+  background-color: rgb(100, 100, 235);
+  color: white;
+  height: 30px;
+  width: 150px;
+  border: transparent;
+  outline: 0;
+}
+.middle_third_list {
+    display: flex;
+    padding: 0px 20px;
+}
+.middle_third_list > p {
+    font-size: 16px;
+    width:50px;
+    width: 80px;
+    font-weight: bold;
+}
+#stock_container {
+    height:40vh;
+    overflow-y: scroll;
+}
+#stock_container >div {
+    display: flex;
+    padding: 0px 20px;
+}
+.middle_third_bottom {
+    display: flex;
+    margin-top: 1vh;
+    justify-content: space-between;
+    background-color: lightgrey;
+    height: 20vh;
+    line-height: 0.5;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+.chart {
+    display: flex;
+    margin-top: 1vh;
+    width: 100vw;
+    /* background-color: lightgray; */
+}
+.charts_above {
+    display: flex;
+    justify-content: space-between;
+}
+.charts_below {
+    margin-top: 20vh;
+}
+.chart_right {
+    display: flex;
+    flex-direction: column;
+    width:60vw;
+    height: 89vh;
+    background-color: lightgray;
+}
+.charts_left {
+    width: 39vw;
+    margin-left: 1vw;
+    height: 89vh;
+}
+.charts_left_above {
+   width: 39vw;
+   height: fit-content;
+   padding-bottom: 10px;
+   background-color: lightgray;
+}
+#charts_left_above_header {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+.charts_left_above_descbutton {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(100, 100, 235);
+    border: transparent;
+    color: white;
+    outline: 0;
+}
+.charts_left_above_closebtn {
+    width: 39vw;
+    display: flex;
+    justify-content: center;
+}
+.charts_left_above_closebtn > button {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(100, 100, 235);
+    border: transparent;
+    color: white;
+    outline: 0;
+}
+.charts_left_below {
+    height: 48vh;
+    margin-top: 1vh;
+    background-color: lightgray;
+    line-height: 0.2;
+    overflow: hidden;
+}
+.charts_left_below > p {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.charts_left_below_div {
+    display: flex;
+    padding: 20px;
+}
+.charts_left_below_div >p {
+    font-size: 20px;
+    width: 100px;
+    font-weight: bold;
+}
